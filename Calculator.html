@@ -1,0 +1,27 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="Calculator.Css">	
+	<h1>Percentage Calculator</h1>
+	<script>
+		function add(){
+	var a,b,c,d,result;
+	a=Number(document.getElementById("math").value);
+	b=Number(document.getElementById("phy").value);
+	c=Number(document.getElementById("cs").value);
+	d=Number(document.getElementById("wp").value);
+	result=a+b+c+d;
+	document.getElementById("answer").value= result;
+	</script>	
+	</head>
+	<body>
+
+		<div class="app-form-group">
+		<input type="text" class="app-form-control" placeholder="maths" id="math"><br>
+		<input type="text" class="app-form-control" placeholder="physics" id="phy"><br>
+		<input type="text" class="app-form-control" placeholder="compscince" id="cs"><br>
+		<input type="text" calss="app-form-control" placeholder="webprogramming" id="wp"><br><br>
+		<button onclick="add()">Add</button>
+		<input id="answer">
+	</body>
+	
+</html>
